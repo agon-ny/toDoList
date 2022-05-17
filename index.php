@@ -13,8 +13,12 @@
         <button>Add To List</button>
     </div>
 
-    <div class="addToListForm">
-        <form method="POST">
+    <div class="seeList">
+        <button>See the list</button>
+    </div>
+
+    <div class="addToListDiv">
+        <form method="POST" id="addToListForm" >
             <input type="text" name="toDo" placeholder="Today i need to..." >
             <input type="submit" value="Add" name="action" >
         </form>
@@ -22,5 +26,6 @@
 
     <script src="resources/scripts/libs/jquery.js"></script>
     <script src="resources/scripts/main.js"></script>
+    <script src="resources/scripts/ajax.js"></script>
 </body>
 </html>
