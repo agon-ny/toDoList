@@ -2,9 +2,192 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins';
 }
 
 html, body{
     height: 100%;
 }
 
+body {
+    overflow: hidden;
+}
+
+.mainPage{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+
+}
+
+header{
+    padding: 1.5rem;
+}
+
+.title > h2{
+    color: white;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+    transition: 1s;
+}
+
+.mainBtn {
+    width: 250px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: lighter;
+    font-size: larger;
+    background-color: white;
+    border-radius: 10px;
+    border-bottom: 7px solid rgb(193, 188, 188);
+    border-right: 7px solid rgb(217, 212, 212);
+    margin: 1rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.mainBtn:hover{
+    transform: scale(1.2);
+}
+
+.addToList {
+    display: flex;
+    justify-content: center;
+}
+
+.addToList > form {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.addToList > form > input{
+    width: 100%;
+    padding-left: 0.5rem;
+    margin-top: 0.5rem;
+    height: 40px;
+    border: 0;
+    border-radius: 5px;
+    outline: 0;
+}
+
+.addToList > form > input:first-child:focus{
+    border: 1px solid black;
+}
+
+.addToList > form > input:last-child {
+    padding: 0;
+    max-width: 250px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.addToList > form > input:last-child:hover{
+    opacity: 50%;
+}
+
+.list {
+    text-align: center;
+    position: absolute;
+    bottom: -500px;
+    right: 0;
+    left: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 400px;
+    min-height: 400px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: white;
+    transition: 1s;
+}
+
+.task {
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+    background-color: #ccc;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.task > span {
+    height: 100%;
+    display: block;
+    overflow: auto;
+}
+
+.markAsDone{
+    width: 100px;
+    height: 30px;
+}
+
+.delete{
+    width: 100px;
+    height: 30px;
+}
+
+.completedList {
+    text-align: center;
+    position: absolute;
+    bottom: -500px;
+    right: 0;
+    left: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 400px;
+    min-height: 400px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: white;
+    transition: 1s;
+}
+
+.doneTasks {
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+    background-color: #ccc;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.doneTasks > span {
+    height: 100%;
+    display: block;
+    overflow: auto;
+}
+
+#poweredBy{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 1rem;
+    font-size: 13px;
+    color: white;
+}
+
+#poweredBy > a{
+    color: white;
+}

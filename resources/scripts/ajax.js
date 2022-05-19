@@ -11,6 +11,7 @@ $(document).ready(function(){
                 console.log(response.case);
                 if (response.case == 'success') {
                     $("input[name=toDo]").val('');
+                    $(".emptyCheck").remove();
                     //alert("A task wass successfully added!");
                     $(".list").append(
                         "<div taskId="+response.taskId+" class='task'><span>"+response.task+"</span><button class='markAsDone'>Mark as Done!</button><button class='delete'>Delete task</button></div>");
@@ -50,6 +51,7 @@ $(document).ready(function(){
                 console.log(response.case);
                 if (response.case == 'success') {
                     $(task).remove();
+                    $(".emptyCheck").remove();
                     $('.completedList').append(
                         "<div class='doneTasks' completedTaskId='"+response.completedTaskId+"'><span>"+response.task+"</span><button class='deleteCompletedTask'>Delete task</button></div>"
                     );
