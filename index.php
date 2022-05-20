@@ -88,7 +88,7 @@
         </div>
 
 
-        <p id="poweredBy">Powered by <a href="https://github.com/SoloDv" target="_blank" >Solo</a></p>
+        <p id="poweredBy">V1.1.0 Powered by <a href="https://github.com/SoloDv" target="_blank" >Solo</a></p>
     </section>
     
     
