@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+    
     $('#addToListForm').submit(function(e){
         toDo = $("input[name=toDo]").val();
         $.ajax({

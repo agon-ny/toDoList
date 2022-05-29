@@ -70,19 +70,14 @@
         <div class="completedList">
             <?php
                 $completedTasks = $trackUsers->getCompletedTasks();
-                if($completedTasks->rowCount() == 0){
-            ?>
-                    
-            <?php
-                }else{
-                    foreach($completedTasks as $key => $value){
+                foreach($completedTasks as $key => $value){
             ?>
             <div class="doneTasks" completedTaskId="<?php echo $value['id']; ?>" >
                 <span><?php echo $value['task']; ?></span>
                 <button class="deleteCompletedTask delete">Delete</button>
             </div>
             <?php
-                }};
+                };
             ?>
 
         </div>
